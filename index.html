@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olives Store</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
         }
+        
+        h1, h2 {
+            font-family: 'Verdana', sans-serif;
+        }
+
         /* Navigation Bar */
         nav {
             background-color: #333;
-            padding: 10px;
+            padding: 15px 30px;
             position: fixed;
             top: 0;
             width: 100%;
@@ -25,7 +32,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
         }
         nav ul li {
             margin-left: 20px;
@@ -39,19 +46,36 @@
             text-decoration: underline;
         }
 
-        /* Section for images */
+        /* Hero Section */
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Images Section */
         .images-section {
-            margin-top: 60px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
+            gap: 30px;
+            padding: 60px 20px;
         }
         .image-card {
-            border: 2px solid #ccc;
+            background-color: white;
             border-radius: 8px;
-            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
         }
         .image-card img {
             width: 100%;
@@ -59,27 +83,41 @@
             border-radius: 8px;
         }
         .image-card h3 {
-            margin-top: 10px;
+            margin-top: 15px;
+            font-size: 1.5em;
         }
         .image-card p {
-            margin: 5px 0;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .image-card:hover {
+            transform: scale(1.05);
         }
 
         /* Contact Us Section */
         .contact-section {
-            margin-top: 50px;
+            padding: 50px 20px;
+            background-color: #f8f8f8;
             text-align: center;
-            padding: 30px;
-            background-color: #f4f4f4;
         }
         .contact-section h2 {
+            font-size: 2.5em;
             margin-bottom: 20px;
         }
         .contact-section p {
-            font-size: 20px;
+            font-size: 1.3em;
+            margin-top: 20px;
         }
 
-        /* Smooth scroll */
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Smooth Scroll */
         html {
             scroll-behavior: smooth;
         }
@@ -94,7 +132,13 @@
         </ul>
     </nav>
 
-    <!-- Images Section -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Our Olives Store</h1>
+        <p>Premium Olives at Affordable Prices</p>
+    </section>
+
+    <!-- Olives Images Section -->
     <section id="images" class="images-section">
         <div class="image-card">
             <img src="image1.jpg" alt="Olives Type 1">
@@ -131,9 +175,13 @@
     <!-- Contact Us Section -->
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to reach out to us!</p>
+        <p>If you have any questions or inquiries, please reach out to us!</p>
         <p><strong>Phone Number: (123) 456-7890</strong></p>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Olives Store | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
-
