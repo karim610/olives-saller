@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olives Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section for images */
+        .images-section {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-card {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .image-card h3 {
+            margin-top: 10px;
+        }
+        .image-card p {
+            margin: 5px 0;
+        }
+
+        /* Contact Us Section */
+        .contact-section {
+            margin-top: 50px;
+            text-align: center;
+            padding: 30px;
+            background-color: #f4f4f4;
+        }
+        .contact-section h2 {
+            margin-bottom: 20px;
+        }
+        .contact-section p {
+            font-size: 20px;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#images">Olives Collection</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Images Section -->
+    <section id="images" class="images-section">
+        <div class="image-card">
+            <img src="image1.jpg" alt="Olives Type 1">
+            <h3>Olives Type 1</h3>
+            <p>Description of the olive type.</p>
+            <p><strong>Price: $10</strong></p>
+        </div>
+        <div class="image-card">
+            <img src="image2.jpg" alt="Olives Type 2">
+            <h3>Olives Type 2</h3>
+            <p>Description of the olive type.</p>
+            <p><strong>Price: $12</strong></p>
+        </div>
+        <div class="image-card">
+            <img src="image3.jpg" alt="Olives Type 3">
+            <h3>Olives Type 3</h3>
+            <p>Description of the olive type.</p>
+            <p><strong>Price: $15</strong></p>
+        </div>
+        <div class="image-card">
+            <img src="image4.jpg" alt="Olives Type 4">
+            <h3>Olives Type 4</h3>
+            <p>Description of the olive type.</p>
+            <p><strong>Price: $8</strong></p>
+        </div>
+        <div class="image-card">
+            <img src="image5.jpg" alt="Olives Type 5">
+            <h3>Olives Type 5</h3>
+            <p>Description of the olive type.</p>
+            <p><strong>Price: $20</strong></p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us!</p>
+        <p><strong>Phone Number: (123) 456-7890</strong></p>
+    </section>
+</body>
+</html>
+
